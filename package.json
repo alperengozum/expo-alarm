@@ -1,7 +1,7 @@
 {
   "name": "expo-alarm",
   "version": "0.1.0",
-  "description": "Use Android AlarmManager in React Native / Expo app",
+  "description": "Use Android AlarmClock in React Native / Expo app",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -20,7 +20,7 @@
     "expo",
     "expo-alarm",
     "ExpoAlarm",
-    "AlarmManager"
+    "AlarmClock"
   ],
   "repository": "https://github.com/Alperengozum/expo-alarm",
   "bugs": {
