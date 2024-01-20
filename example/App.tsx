@@ -1,4 +1,5 @@
 import * as ExpoAlarm from "expo-alarm";
+import React from "react";
 import { Button, StyleSheet, View } from "react-native";
 
 export default function App() {
@@ -6,12 +7,12 @@ export default function App() {
     <View style={styles.container}>
       <Button
         title="Set Alarm"
-        onPress={async () => {
+        onPress={async (): Promise<void> => {
           const res = await ExpoAlarm.setAlarm({
             hour: 16,
             minutes: 30,
             message: "Alarm",
-            vibrate: true,
+            vibrate: true
           });
           console.log(res);
         }}
@@ -25,38 +26,38 @@ export default function App() {
       />
       <Button
         title="Show Alarms"
-        onPress={async () => {
+        onPress={async (): Promise<void> => {
           const res = await ExpoAlarm.showAlarms();
           console.log(res);
         }}
       />
       <Button
         title="Snooze Alarm"
-        onPress={async () => {
+        onPress={async (): Promise<void> => {
           const res = await ExpoAlarm.snoozeAlarm();
           console.log(res);
         }}
       />
       <Button
         title="Set Timer"
-        onPress={async () => {
+        onPress={async (): Promise<void> => {
           const res = await ExpoAlarm.setTimer({
             seconds: 100,
-            message: "Timer",
+            message: "Timer"
           });
           console.log(res);
         }}
       />
       <Button
         title="Dismiss Timer"
-        onPress={async () => {
+        onPress={async (): Promise<void> => {
           const res = await ExpoAlarm.dismissTimer();
           console.log(res);
         }}
       />
       <Button
         title="Show Timers"
-        onPress={async () => {
+        onPress={async (): Promise<void> => {
           const res = await ExpoAlarm.showTimers();
           console.log(res);
         }}
@@ -71,6 +72,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     gap: 20,
     alignItems: "center",
-    justifyContent: "center",
-  },
+    justifyContent: "center"
+  }
 });
