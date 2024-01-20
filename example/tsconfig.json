@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-alarm": ["../src/index"],
+      "expo-alarm/*": ["../src/*"]
+    }
+  }
+}

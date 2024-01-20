@@ -1,0 +1,42 @@
+{
+  "name": "expo-alarm",
+  "version": "0.1.0",
+  "description": "This project mainly focus to use AlarmClock specially Setting alarm",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "open:ios": "open -a \"Xcode\" example/ios",
+    "open:android": "open -a \"Android Studio\" example/android"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-alarm",
+    "ExpoAlarm"
+  ],
+  "repository": "https://github.com/Alperengozum/expo-alarm",
+  "bugs": {
+    "url": "https://github.com/Alperengozum/expo-alarm/issues"
+  },
+  "author": "alperengozum <alperengozum0@gmail.com> (https://github.com/Alperengozum)",
+  "license": "MIT",
+  "homepage": "https://github.com/Alperengozum/expo-alarm#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "expo-module-scripts": "^3.0.11",
+    "expo-modules-core": "^1.5.11"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
