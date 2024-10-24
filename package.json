@@ -1,6 +1,6 @@
 {
   "name": "expo-alarm",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Use Android AlarmClock in React Native / Expo app",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -8,19 +8,18 @@
     "build": "expo-module build",
     "clean": "expo-module clean",
     "lint": "expo-module lint",
-    "test": "expo-module test --passWithNoTests",
+    "test": "expo-module test",
     "prepare": "expo-module prepare",
     "prepublishOnly": "expo-module prepublishOnly",
     "expo-module": "expo-module",
-    "open:ios": "open -a \"Xcode\" example/ios",
+    "open:ios": "xed example/ios",
     "open:android": "open -a \"Android Studio\" example/android"
   },
   "keywords": [
     "react-native",
     "expo",
     "expo-alarm",
-    "ExpoAlarm",
-    "AlarmClock"
+    "ExpoAlarm"
   ],
   "repository": "https://github.com/Alperengozum/expo-alarm",
   "bugs": {
@@ -32,8 +31,8 @@
   "dependencies": {},
   "devDependencies": {
     "@types/react": "^18.0.25",
-    "expo-module-scripts": "^3.0.11",
-    "expo-modules-core": "^1.5.11"
+    "expo-module-scripts": "^3.5.2",
+    "expo-modules-core": "^1.12.24"
   },
   "peerDependencies": {
     "expo": "*",

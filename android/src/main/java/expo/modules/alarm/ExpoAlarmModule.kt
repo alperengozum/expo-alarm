@@ -8,7 +8,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.core.os.bundleOf
-import expo.modules.alarm.exceptions.ActivityAlreadyStartedException
 import expo.modules.kotlin.Promise
 import expo.modules.kotlin.exception.Exceptions
 import android.provider.AlarmClock

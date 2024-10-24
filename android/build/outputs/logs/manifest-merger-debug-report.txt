@@ -1,0 +1,21 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml:1:1-3:12
+INJECTED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml:1:11-39
+		INJECTED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml:1:40-98
+uses-permission#com.android.alarm.permission.SET_ALARM
+ADDED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml:2:5-77
+	android:name
+		ADDED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml:2:22-75
+uses-sdk
+INJECTED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml
+INJECTED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml

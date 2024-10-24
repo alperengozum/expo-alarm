@@ -1,0 +1,11 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="expo.modules.alarm" >
+4
+5    <uses-sdk android:minSdkVersion="23" />
+6
+7    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+7-->/Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml:2:5-77
+7-->/Users/alperengozum/Desktop/Coding/expo-testhelp/example/node_modules/expo-alarm/android/src/main/AndroidManifest.xml:2:22-75
+8
+9</manifest>
