@@ -1,153 +1,35 @@
 # expo-alarm
-> This is not an official Expo SDK package.
 
-## Overview
+Use Android AlarmClock in React Native / Expo app
 
-Expo Alarm is a React Native/Expo library that allows you to interact with the Android AlarmClock functionality in your mobile app. It provides a set of functions to manage alarms and timers seamlessly.
+# API documentation
 
-## Platform Compatibility
+- [Documentation for the main branch](https://github.com/expo/expo/blob/main/docs/pages/versions/unversioned/sdk/alarm.md)
+- [Documentation for the latest stable release](https://docs.expo.dev/versions/latest/sdk/alarm/)
 
-| Platform          | Android Device | Android Emulator | iOS Device | iOS Simulator | Web     |
-| ----------------- | -------------- | ----------------- | ---------- | ------------- | ------- |
-| **Compatibility** | ✅          | ✅             | ❌       | ❌          | ❌    |
+# Installation in managed Expo projects
 
-## Installation
+For [managed](https://docs.expo.dev/archive/managed-vs-bare/) Expo projects, please follow the installation instructions in the [API documentation for the latest stable release](#api-documentation). If you follow the link and there is no documentation available then this library is not yet usable within managed projects &mdash; it is likely to be included in an upcoming Expo SDK release.
 
-To use expo-alarm in your project, install it via npm:
+# Installation in bare React Native projects
 
-```bash
+For bare React Native projects, you must ensure that you have [installed and configured the `expo` package](https://docs.expo.dev/bare/installing-expo-modules/) before continuing.
+
+### Add the package to your npm dependencies
+
+```
 npm install expo-alarm
 ```
 
-or
+### Configure for iOS
 
-```bash
-yarn add expo-alarm
-```
+Run `npx pod-install` after installing the npm package.
 
-## Usage
 
-### Dismiss Alarm
->```(params: DismissAlarmParams) => Promise<AlarmResult>```
+### Configure for Android
 
-Dismiss a currently active alarm. [Android Reference](https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_DISMISS_ALARM:kotlin.String)
 
-```typescript
-import { dismissAlarm, DismissAlarmParams } from 'expo-alarm';
 
-const dismissAlarmParams: DismissAlarmParams = {
-  //searchMode: 'android.all',
-  //extra: { customData: 'exampleData' },
-};
+# Contributing
 
-dismissAlarm(dismissAlarmParams);
-```
-
-### Dismiss Timer
->```(params: DismissTimerParams) => Promise<AlarmResult>```
-
-Dismiss a currently active timer. [Android Reference](https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_DISMISS_TIMER:kotlin.String)
-
-```typescript
-import { dismissTimer, DismissTimerParams } from 'expo-alarm';
-
-const dismissTimerParams: DismissTimerParams = {
-  //extra: { customData: 'exampleData' },
-};
-
-dismissTimer(dismissTimerParams);
-```
-
-### Set Alarm
->```(params: SetAlarmParams) => Promise<AlarmResult>```
-
-Set a new alarm. [Android Reference](https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SET_ALARM:kotlin.String)
-
-```typescript
-import { setAlarm, SetAlarmParams } from 'expo-alarm';
-
-const setAlarmParams: SetAlarmParams = {
-  hour: 8,
-  minutes: 30,
-  days: [1, 2, 3],
-  message: 'Wake up!',
-  //ringtoneUri: 'exampleRingtoneUri',
-  vibrate: true,
-  skipUi: false,
-  //extra: { customData: 'exampleData' },
-};
-
-setAlarm(setAlarmParams);
-```
-
-### Show Alarms
->```(params: ShowAlarmsParams) => Promise<AlarmResult>```
-
-Show the list of alarms. [Android Reference](https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SHOW_ALARMS:kotlin.String)
-
-```typescript
-import { showAlarms, ShowAlarmsParams } from 'expo-alarm';
-
-const showAlarmsParams: ShowAlarmsParams = {
-  //extra: { customData: 'exampleData' },
-};
-
-showAlarms(showAlarmsParams);
-```
-
-### Show Timers
->```(params: ShowTimersParams) => Promise<AlarmResult>```
-
-Show the list of timers. [Android Reference](https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SHOW_TIMERS:kotlin.String)
-
-```typescript
-import { showTimers, ShowTimersParams } from 'expo-alarm';
-
-const showTimersParams: ShowTimersParams = {
-  //extra: { customData: 'exampleData' },
-};
-
-showTimers(showTimersParams);
-```
-
-### Snooze Alarm
->```(params: SnoozeAlarmParams) => Promise<AlarmResult>```
-
-Snooze a currently active alarm. [Android Reference](https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SNOOZE_ALARM:kotlin.String)
-
-```typescript
-import { snoozeAlarm, SnoozeAlarmParams } from 'expo-alarm';
-
-const snoozeAlarmParams: SnoozeAlarmParams = {
-  snoozeDuration: 10,
-  //extra: { customData: 'exampleData' },
-};
-
-snoozeAlarm(snoozeAlarmParams);
-```
-
-### Set Timer
->```(params: SetTimerParams) => Promise<AlarmResult>```
-
-Set a new timer. [Android Reference](https://developer.android.com/reference/kotlin/android/provider/AlarmClock#ACTION_SET_TIMER:kotlin.String)
-
-```typescript
-import { setTimer, SetTimerParams } from 'expo-alarm';
-
-const setTimerParams: SetTimerParams = {
-  seconds: 300,
-  message: 'Countdown',
-  skipUi: false,
-  //extra: { customData: 'exampleData' }, //OPTIONAL
-};
-
-setTimer(setTimerParams);
-```
-
-### References
-
-- [Android AlarmClock Documentation](https://developer.android.com/reference/kotlin/android/provider/AlarmClock)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are very welcome! Please refer to guidelines described in the [contributing guide]( https://github.com/expo/expo#contributing).
