@@ -2,15 +2,14 @@ package expo.modules.alarm
 
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
-import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import androidx.core.os.bundleOf
 import expo.modules.kotlin.Promise
 import expo.modules.kotlin.exception.Exceptions
 import android.provider.AlarmClock
+import java.util.Calendar
 
 private const val REQUEST_CODE = 12
 private const val ATTR_EXTRA = "extra"
@@ -98,4 +97,3 @@ class ExpoAlarmModule : Module() {
 }
 
 private fun Map<String, Any>.toBundle(): Bundle = bundleOf(*this.toList().toTypedArray())
-
